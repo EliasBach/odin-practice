@@ -8,6 +8,58 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <form action="" method="post" novalidate> 
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="john.smith@mail.org">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="xxxxxxxx">
+        <br>
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" placeholder="US">
+        <br>
+        <label for="postalcode">Postal code:</label>
+        <input type="text" name="postalcode" id="postalcode" placeholder="XXXXX">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="password-confirm">Confirm password:</label>
+        <input type="password" name="password-confirm" id="password-confirm">
+        <!--labe.for attribute links to input.id-->
+        <!--input.name is for backend-->
+
+        <!--fieldset groups input elements together-->
+        <fieldset>
+            <legend>What is your favourite drink?</legend>
+          
+            <div>
+              <input type="radio" name="drink" id="coffee" value="coffee" required>
+              <label for="coffee">Coffee</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="tea" value="tea">
+              <label for="tea">Tea</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="soda" value="soda">
+              <label for="soda">Soda</label>
+            </div>
+
+            <div>
+                <input type="radio" name="drink" id="water" value="water">
+                <label for="soda">Water</label>
+            </div>
+          </fieldset>
+          <!--radio buttons are grouped with name attribute-->
+          <!--if required, only one element needs to specifiy this-->
+          <!--because of "novalidate" the "required" attribute doesn't work here-->
+        
+          <button type="submit">Submit</button>
+    </form>
+
+
 </body>
 </html>
