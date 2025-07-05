@@ -1,0 +1,21 @@
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.image-container {
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    height: 200px;
+}
